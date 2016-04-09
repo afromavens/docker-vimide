@@ -261,4 +261,3 @@ noremap <leader>g :LustyBufferGrep<CR>
 
 " Tagbar on _
 nmap <silent> _ :TagbarToggle<CR>
-NERDTree
