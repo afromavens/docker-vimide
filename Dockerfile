@@ -30,4 +30,4 @@ RUN echo "set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
 RUN mkdir /etc/vim/bundle
 RUN git clone http://github.com/gmarik/vundle.git /etc/vim/bundle/vundle
 RUN wget -P /etc/vim  https://raw.githubusercontent.com/afromavens/docker-vimide/master/vimrc/vimrc.local 
-RUN vim -c 'PluginInstall' -c 'qall' -c 'qa!'
+RUN echo | echo | echo | vim -c 'PluginInstall' -c 'qall' -c 'qa!' &> /dev/null
