@@ -66,7 +66,7 @@ set novisualbell                " don't blink
 set t_Co=256                    " Enable 256 color mode
 set exrc                        " Scan working dir for .vimrc
 set secure                      " Make the above work safely
-
+set shortmess=a
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " UI/Colors
