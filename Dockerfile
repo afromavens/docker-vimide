@@ -39,4 +39,4 @@ RUN vim -c 'PluginInstall' -c 'qall' -c 'qa!'
 RUN wget -P /etc/vim  https://raw.githubusercontent.com/afromavens/docker-vimide/master/vimrc/vimrc_vundle_configure_plugins.local 
 RUN echo "source /etc/vim/vimrc_vundle_configure_plugins.local" >> /etc/vim/vimrc
 
-ENTRYPOINT [vim]
+ENTRYPOINT ["/usr/bin/vim"]
