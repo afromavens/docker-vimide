@@ -1,0 +1,52 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SetUp for Vundle
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype off                        
+set rtp+=/etc/vim/bundle/vundle
+call vundle#rc('/etc/vim/bundle')   " Use a shared folder instead of ~/.vimrc/bundle
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vundle plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'gmarik/vundle'
+
+" Plugins on github:
+Plugin 'guns/xterm-color-table.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'mikehaertl/pdv-standalone'
+Plugin 'vim-scripts/matchit.zip'
+" Requires sudo pear install doc.php.net/pman
+Plugin 'powerman/vim-plugin-viewdoc'
+Plugin 'StanAngeloff/php.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'rodjek/vim-puppet'
+Plugin 'evanmiller/nginx-vim-syntax'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'godlygeek/tabular'
+Plugin 'groenewege/vim-less'
+Plugin 'pangloss/vim-javascript'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" To activate add project specific .vimrc with
+" set runtimepath+=/etc/vim/bundle/yii2-apidoc-vim
+Plugin 'mikehaertl/yii-api-vim', {'rtp': 'none'}
+Plugin 'mikehaertl/yii2-apidoc-vim', {'rtp': 'none'}
+
+" vim-scripts repos
+Plugin 'LustyExplorer'
+Plugin 'The-NERD-tree'
+" Requires fix after installation:
+"   chmod a+x /etc/vim/bundle/tagbar-phpctags/bin/phpctags
+Plugin 'tagbar-phpctags'
+
+" color scheme approximator
+Plugin 'CSApprox'
+Plugin 'Colour-Sampler-Pack'
+
+" Requires color scheme approx. to be loaded
+Plugin 'Lokaltog/vim-easymotion'
