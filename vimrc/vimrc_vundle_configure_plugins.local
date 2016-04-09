@@ -94,6 +94,7 @@ autocmd FileType php setlocal iskeyword-=$
 autocmd FileType php let b:surround_45 = "<?php \r ?>"
 " Let the surround plugin use `=` for <?php ?>
 autocmd FileType php let b:surround_61 = "<?= \r ?>"
+autocmd VimEnter * NERDTree
 
 " Function for autodetecting tab settings
 function Kees_settabs()
