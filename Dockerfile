@@ -1,7 +1,7 @@
 FROM ubuntu:14.04.4
 
 # Install Prereq Packages
-RUN apt-get install -y \
+RUN apt-get update && apt-get install -y \
   wget \
   python-pip \
   git \
@@ -13,6 +13,7 @@ RUN apt-get install -y \
 RUN pip install git+git://github.com/Lokaltog/powerline
 
 #Install Powerline Font
+
 RUN wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
 
 RUN mv PowerlineSymbols.otf /usr/share/fonts/
