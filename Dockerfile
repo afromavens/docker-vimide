@@ -6,7 +6,8 @@ RUN apt-get update && apt-get install -y \
   python-pip \
   git \
   fontconfig \
-  vim 
+  vim \
+  vim-gtk 
 
 #Install Powerline
 RUN pip install git+git://github.com/Lokaltog/powerline
@@ -24,3 +25,10 @@ RUN echo "if [ -f /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash
 
 #Set Powerline in Vim Globally
 RUN echo "set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/ \nset laststatus=2 \nset t_Co=256" >> /etc/vim/vimrc
+
+#Set the Vundle 
+RUN mkdir /etc/vim/bundle
+RUN git clone http://github.com/gmarik/vundle.git /etc/vim/bundle/vundle
+
+
+
