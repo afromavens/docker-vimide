@@ -29,7 +29,8 @@ RUN echo "set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
 #Set the Vundle 
 RUN mkdir /etc/vim/bundle
 RUN git clone http://github.com/gmarik/vundle.git /etc/vim/bundle/vundle
-RUN wget -P /etc/vim/vimrc.local  https://raw.githubusercontent.com/afromavens/docker-vimide/master/vimrc/vimrc.local 
+RUN wget -P /etc/vim  https://raw.githubusercontent.com/afromavens/docker-vimide/master/vimrc/vimrc.local 
+RUN vim +PluginInstall +qall
 
 ENTRYPOINT ["vim"]
 
